@@ -1,4 +1,4 @@
-import { PrismaCoffeesRepository } from "@/repositories/prisma/prisma-coffes-repository"
+import { PrismaCoffeesRepository } from "@/repositories/prisma/prisma-coffees-repository"
 import { FetchCoffeesUseCase } from "../fetch-coffees"
 
 export function makeFetchCoffeesUseCase(){

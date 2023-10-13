@@ -1,6 +1,4 @@
-import { PrismaCoffeesRepository } from "@/repositories/prisma/prisma-coffes-repository";
-import { makeFetchCoffeesUseCase } from "@/use-cases/factories/fetch-coffees-use-case";
-import { FetchCoffeesUseCase } from "@/use-cases/fetch-coffees";
+import { makeFetchCoffeesUseCase } from "@/use-cases/factories/make-fetch-coffees-use-case";
 import { FastifyReply, FastifyRequest } from "fastify";
 
 export async function all(request: FastifyRequest, reply: FastifyReply){

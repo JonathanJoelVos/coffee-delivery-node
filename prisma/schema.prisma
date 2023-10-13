@@ -12,15 +12,20 @@ datasource db {
 
 model Coffee {
   id          String  @id @default(uuid())
-  label       Label   @relation(fields: [label_id], references: [id])
-  label_id    String
   name        String
   description String
   price       Decimal
+  labels      Label[]
+
+  @@map("coffees")
 }
 
 model Label {
-  id     String   @id @default(uuid())
-  type   String   @unique
-  Coffee Coffee[]
+  id     String @id @default(uuid())
+  coffee Coffee @relation(fields: [coffee_id], references: [id])
+
+  coffee_id String
+  name      String
+
+  @@map("labels")
 }
