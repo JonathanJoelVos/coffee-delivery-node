@@ -1,4 +1,3 @@
-import { makeFetchCoffeesUseCase } from "@/use-cases/factories/make-fetch-coffees-use-case";
 import { makeFetchLabelsUseCase } from "@/use-cases/factories/make-fetch-labels-use-case";
 import { FastifyReply, FastifyRequest } from "fastify";
 

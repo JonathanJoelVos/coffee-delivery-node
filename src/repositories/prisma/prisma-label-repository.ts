@@ -16,4 +16,15 @@ export class PrismaLabelRepository implements LabelRepository {
 
         return labels
     }
+
+    async delete(id: string) {
+        console.log('oi')
+        const label = await prisma.label.delete({
+            where: {
+                id
+            }
+        })
+
+        return label
+    }
 }
