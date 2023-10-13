@@ -1,7 +1,7 @@
-import fastify from "fastify";
+import fastify from "fastify"; 
 import { coffeeRoutes } from "./http/controllers/coffees/routes";
 
-export const app = fastify()
+export const app = fastify()  
 
 
 app.register(coffeeRoutes)

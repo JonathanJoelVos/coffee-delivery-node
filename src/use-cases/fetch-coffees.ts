@@ -4,7 +4,7 @@ export class FetchCoffeesUseCase {
     constructor(private coffeesRepository: CoffeesRepository){}
 
     async execute(){
-        const coffees = this.coffeesRepository.findAll()
+        const coffees = await this.coffeesRepository.findAll()
 
         return coffees
     }
